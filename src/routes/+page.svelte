@@ -3,19 +3,15 @@
 </header>
 <body>
     <main class = "login">
-        <form method="post">
             <h2>เข้าสู่ระบบ</h2>
-            <div class = "email">
+            <form action="/login" method="POST">
                 <label for="email">email : </label>
-                <input type="text" id = "email" name = "email" required placeholder="example@email.com">
-            </div> 
-            <div class = "password">
+                <input type="email" name="email" placeholder="email@example.com"><br>
                 <label for="password">password : </label>
-                <input type="password" name="password" id="password">
-            </div>
-            <div class = "login btn">
-                <button type="submit">Login to Honey Pot</button>
-            </div>
-        </form>
+                <input type="password" name="password" placeholder="password">
+                <div class = "login btn">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
     </main>
 </body>
