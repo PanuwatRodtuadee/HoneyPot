@@ -4,11 +4,15 @@
 <body>
     <main class = "login">
             <h2>เข้าสู่ระบบ</h2>
-            <form action="/login" method="POST">
-                <label for="email">email : </label>
-                <input type="email" name="email" placeholder="email@example.com"><br>
-                <label for="password">password : </label>
-                <input type="password" name="password" placeholder="password">
+            <form method="POST">
+                <div>
+                    <label for="email">email : </label>
+                    <input type="text" name="email" placeholder="email@example.com">
+                </div>
+                <div>
+                    <label for="password">password : </label>
+                    <input type="password" name="password" placeholder="password">
+                </div>
                 <div class = "login btn">
                     <button type="submit">Login</button>
                 </div>
